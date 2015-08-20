@@ -4,12 +4,12 @@
 	angular.module('app', [])
   		.controller('DashboardController', DashboardController);
 		  
-	DashboardController.$inject = ['$q', '$http'];
+	DashboardController.$inject = ['$scope', '$q', '$http'];
 	
-	function DashboardController($q, $http)
+	function DashboardController($scope, $q, $http)
 	{
 		var vm = this;
-		vm.mesage = 'Everything is running ok';
+		vm.message = 'Everything is running ok';
 		
 		
 		init();
