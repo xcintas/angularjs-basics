@@ -1,15 +1,13 @@
 (function(){
-	'use sctrict'
-
-	angular.module('app', [])
-  		.controller('DashboardController', DashboardController);
-		  
-	DashboardController.$inject = ['$scope', '$q', '$http'];
+	/*'use strict'*/
 	
-	function DashboardController($scope, $q, $http)
+	angular.module('app')
+		  .controller("DashboardController", ["$scope", DashboardController]);
+		  
+	function DashboardController($scope)
 	{
-		var vm = this;
-		vm.message = 'Everything is running ok';
+		//var vm = this;
+		$scope.message = 'Everything is running ok';
 		
 		
 		init();
@@ -22,4 +20,5 @@
 			}
 		}
 	}	
-})
+	
+}());

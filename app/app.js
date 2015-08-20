@@ -1,13 +1,10 @@
 (function(){
     
-    var app = angular.module('app', ['ngRoute', 'ngAnimate']);
+    var app = angular.module('app', ['ngRoute']);
     
     app.config(function($routeProvider) {
-            $routeProvider.
-                    when('/', {templateUrl: 'dashboard/dashboard.html',   controller: "DashboardController"}).
-                    //when('/list', {templateUrl: 'list.html',   controller: ListCtrl}).
-                    //when('/detail/:itemId', {templateUrl: 'detail.html',   controller: DetailCtrl}).
-                    //when('/settings', {templateUrl: 'settings.html',   controller: SettingsCtrl}).
-                    otherwise({redirectTo: '/'});
+        $routeProvider.
+            when('/', {templateUrl: 'app/dashboard/dashboard.html',   controller: "DashboardController"}).
+            otherwise({redirectTo: '/'});
     });
-})
+}());
