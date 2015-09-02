@@ -2,14 +2,14 @@
 	'use strict'
 	
 	angular.module('app')
-		  .controller("DashboardController", ["$scope", DashboardController]);
+		  .controller("NavbarController", ["$scope", NavbarController]);
 		  
-	function DashboardController($scope)
+	function NavbarController($scope)
 	{
 		var vm = this;
 		
 		
-		vm.message = 'I am in DashboardController';
+		vm.message = 'I am in NavbarController';
 		
 		
 		init();

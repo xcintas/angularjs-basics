@@ -2,14 +2,14 @@
 	'use strict'
 	
 	angular.module('app')
-		  .controller("DashboardController", ["$scope", DashboardController]);
+		.controller("ProductController", ["$scope", ProductController]);
 		  
-	function DashboardController($scope)
+	function ProductController($scope)
 	{
 		var vm = this;
 		
 		
-		vm.message = 'I am in DashboardController';
+		vm.message = 'I am in ProductController';
 		
 		
 		init();

@@ -8,15 +8,20 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
+  <script src="js/angular-ui-router.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular-route.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular-animate.min.js"></script>
   
-  <script src="app/app.js"></script>
+  <script src="app/app.module.js"></script>
+  <script src="app/app.module.config.js"></script>
+  <script src="app/app.module.config.run.js"></script>
+  
   <script src="app/dashboard/dashboard.controller.js"></script>
+  <script src="app/product/product.controller.js"></script>
+  <script src="app/navigation/navbar.controller.js"></script>
 </head>
 
-<body>   
-  <h1>Good work!</h1>
+<body>
   <div ng-view></div>
 </body>
 
